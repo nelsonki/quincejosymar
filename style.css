@@ -37,9 +37,11 @@ body {
     font-family: var(--heading-font);
     font-size: 5em;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(255,255,255,0.5); /* Sombra para mejor visibilidad */
+    color: #FFD700; /* Color dorado */
+    font-weight: 700; /* Hace la fuente más gruesa */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mayor profundidad */
     position: relative;
-    z-index: 20;
+    z-index: 20
 }
 
 .hero-content h2 {
