@@ -1,0 +1,376 @@
+:root {
+    --primary-color: #ffc0cb; /* Rosa claro */
+    --secondary-color: #f08080; /* Rosa coral */
+    --accent-color: #dda0dd; /* Ciruela */
+    --lilac-color: #d7d7f8; /* Lila */
+    --lilac-color2: #fff(255, 255, 255); /*blanco */
+    --bg-color-light: #fff5ee; /* Blanco rosado */
+    --text-color: #555;
+    --heading-font: 'Allura', cursive;
+    --body-font: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    margin: 0;
+    color: var(--text-color);
+    /*line-height: 1.6;*/
+    background-color: var(--bg-color-light);
+    overflow-x: hidden;
+}
+
+.hero {
+    /* Nueva imagen de fondo y ajustes */
+    background: url('fondo.jpg') no-repeat center center/cover;
+    color: var(--text-color); /* Color de texto oscuro para el nuevo fondo */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content h1 {
+    font-family: var(--heading-font);
+    font-size: 5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.5); /* Sombra para mejor visibilidad */
+    position: relative;
+    z-index: 20;
+}
+
+.hero-content h2 {
+    font-family: var(--heading-font);
+    font-size: 3em;
+    font-weight: 400;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.5); /* Sombra para mejor visibilidad */
+    position: relative;
+    z-index: 20;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    position: relative;
+    overflow: hidden;
+}
+.section2 {
+    padding: 1px 20px;
+    text-align: center;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+}
+.section-lilac {
+    background-color: var(--lilac-color);
+}
+.section-lilac2 {
+    background-color: var(--lilac-color2);
+}
+/* Fondo nuevo para la sección de Confirmar Asistencia */
+#rsvp {
+    background: url('fondo2.jpg') no-repeat center center/cover;
+}
+
+/* Estilos para la nueva sección con efecto parallax */
+#parallax-section {
+    /* Propiedades clave del efecto parallax */
+    background-image: url('fondo.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 60vh; /* Altura para que el efecto se note */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Necesario para posicionar mariposas dentro de esta sección */
+    position: relative; 
+}
+
+#parallax-section .parallax-content p {
+    font-family: var(--heading-font);
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    padding: 20px;
+    background-color: rgba(0,0,0,0.3); /* Un fondo semitransparente para el texto */
+    border-radius: 10px;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.section-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilo para los íconos */
+h2 i {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: var(--accent-color);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.intro-paragraph {
+    font-family: var(--body-font);
+    font-style: italic;
+    font-size: 1.2em;
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.parent-names {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: var(--heading-font);
+    margin-top: 40px;
+    /*line-height: 1.2;*/
+}
+
+.align-right {
+    text-align: right;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#dress-code img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.countdown-timer {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: var(--accent-color);
+    
+}
+
+/* Estilos para la Galería de Fotos - Estilo Retrato */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Columnas flexibles para móvil */
+    gap: 20px; /* Espacio entre las fotos */
+    padding: 0 5%;
+    max-width: 900px; /* Ancho máximo para el grid */
+    margin: 0 auto; /* Centrar el grid */
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px; /* Altura fija para el estilo de retrato */
+    object-fit: cover; /* Recortar la imagen para que encaje sin distorsionarse */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave al pasar el ratón */
+    filter: grayscale(20%); /* Ligeramente desaturadas para un toque artístico */
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    filter: grayscale(0%); /* Color completo al pasar el ratón */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #b886b8;
+}
+
+/* Estilos del botón flotante */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    font-size: 24px; /* Aumenta el tamaño del ícono */
+    display: flex; /* Centra el ícono */
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    animation: bounce 1s infinite;
+    transition: background-color 0.3s;
+    z-index: 999;
+}
+
+.scroll-button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.scroll-button i {
+    font-size: 24px;
+    color: var(--secondary-color);
+}
+
+.scroll-up i {
+    transform: rotate(180deg);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Estilos para las mariposas animadas */
+.animated-butterfly {
+    position: absolute; /* Posición absoluta para poder moverlas */
+    width: 100px; /* Tamaño de las mariposas */
+    height: auto;
+    z-index: 10; /* Asegurarse de que estén encima del fondo pero debajo del texto */
+    pointer-events: none; /* Para que no interfieran con clics en otros elementos */
+}
+
+/* Posiciones de las mariposas en la sección HERO */
+.butterfly-1 {
+    top: 15%;
+    left: 10%;
+    transform: scale(0.8) rotate(10deg); /* Pequeñas variaciones para cada una */
+}
+
+.butterfly-2 {
+    top: 30%;
+    right: 15%;
+    transform: scale(0.9) rotate(-5deg);
+}
+
+.butterfly-3 {
+    top: 50%;
+    left: 25%;
+    transform: scale(0.7) rotate(20deg);
+}
+
+/* Posición de la mariposa en la sección PARALLAX-SECTION */
+.butterfly-4 {
+    top: -40%;
+    left: 70%; /* Posición diferente para que no se superponga */
+    transform: scale(0.6) rotate(-15deg);
+}
+.butterfly-5 {
+    top: -40%;
+   left: 25%;
+       transform: scale(0.6) rotate(-15deg);
+}
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3.5em;
+    }
+    .hero-content h2 {
+        font-size: 2em;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas muy pequeñas */
+        padding: 0 10%;
+    }
+    /* Ajuste para mariposas en móvil si es necesario */
+    .animated-butterfly {
+        width: 70px; /* Reducir tamaño en móvil */
+    }
+    .butterfly-1 { top: 10%; left: 5%; }
+    .butterfly-2 { top: 25%; right: 5%; }
+    .butterfly-3 { top: 40%; left: 15%; }
+    .butterfly-4 { top: -10%; left: 60%; } /* Ajuste para móvil */
+        .butterfly-5 { top: -60%; left: 15%; } /* Ajuste para móvil */
+
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+#invitation{
+     background: url('fondo3.jpg') no-repeat center center/cover;
+}
+#esperanza{
+     background: url('fondo4.png') no-repeat center center/cover;
+}
+.butterfly-small{
+width: 200px;
+}
+
+/* Estilo para las mariposas que vuelan al presionar el botón */
+.flying-butterfly {
+    position: fixed;
+    width: 50px; /* Tamaño más pequeño para la animación */
+    height: auto;
+    z-index: 1000;
+    pointer-events: none;
+    animation: fly-across 5s ease-in-out forwards; /* 5s para el vuelo */
+}
+
+/* Animación del movimiento de vuelo (posición y rotación) */
+@keyframes fly-across {
+    0% {
+        transform: translate(0, 0) scale(0.5); /* Se quitó la rotación */
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(calc(var(--endX) - var(--startX)), calc(var(--endY) - var(--startY))) scale(1.2); /* Se quitó la rotación */
+        opacity: 0;
+    }
+}
