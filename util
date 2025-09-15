@@ -1,0 +1,9 @@
+#invitation{
+     background: url('fondo3.jpg') no-repeat center center/cover;
+}
+#esperanza{
+     background: url('fondo4.png') no-repeat center center/cover;
+}
+.butterfly-small{
+width: 200px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis 15 Años - [Nombre de la Quinceañera]</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <audio id="background-music" src="ArianaGrandeOneLastTime.mp3" autoplay loop></audio>
+    <button id="music-button" class="floating-button">
+        </button>
+    
+    <header class="hero" data-section="hero">
+        <img src="mariposa1.png" alt="Mariposa animada 1" class="animated-butterfly butterfly-1">
+        <img src="mariposa2.png" alt="Mariposa animada 2" class="animated-butterfly butterfly-2">
+        <img src="mariposa1.png" alt="Mariposa animada 3" class="animated-butterfly butterfly-3">
+        <div class="hero-content">
+            <h1>Mis 15 Años</h1>
+            <h2>Josymar Alexandra Jaimes Acevedo</h2>
+            <p>04 de Octubre de 2025</p>
+        </div>
+    </header>
+    
+    <main>
+        <section id="intro-text" class="section section-lilac hidden" data-section="intro-text">
+            <p class="intro-paragraph">
+                Con gran alegría y gratitud, me complace invitarlos a compartir un momento muy especial en mi vida y sería un honor contar con su presencia en esta ocasión tan significativa donde con la bendición y amor de Dios, de mi madre, mi familia y mi padre mi ángel guardián gigantesco, me llena de alegría llegar a este instante tan importante en mi camino. Donde dejare atrás mi infancia para embarcarme en una nueva etapa llena de sueños y oportunidades con
+            </p>
+            <div class="parent-names align-right">
+                <p>Mis Padres</p>
+                <p>Omar alexander Jaimes Mendoza</p>
+                <p>Karelis del Carmen Acevedo Sánchez</p>
+            </div>
+        </section>
+
+        <section id="parallax-section" class="section hidden">
+        <img src="mariposa1.png" alt="Mariposa animada 3" class="animated-butterfly butterfly-5">
+            <img src="mariposa2.png" alt="Mariposa animada 4" class="animated-butterfly butterfly-4">
+            <div class="parallax-content">
+                <p>Un momento de ensueño</p>
+            </div>
+        </section>
+
+        <section id="countdown" class="section section-lilac hidden" data-section="dress-code">
+                        <img src="mariposa1.png" alt="Mariposa pequeña" class="butterfly-small">
+
+            <h2><i class="fas fa-hourglass-half"></i> Falta muy poco...</h2>
+            <div id="countdown-timer"></div>
+        </section>
+
+        <!--<section id="mass" class="section section-lilac hidden" data-section="mass">
+            <h2><i class="fas fa-church"></i> Ceremonia Religiosa</h2>
+            <p>Día: [Día de la semana]</p>
+            <p>Fecha: [Día y mes de la misa]</p>
+            <p>Iglesia: **[Nombre de la Iglesia]**</p>
+            <p>Ubicación: [Dirección de la iglesia]</p>
+            <a href="https://maps.app.goo.gl/EJEMPLODELUGAR" class="cta-button" target="_blank">Ver en Google Maps</a>
+        </section>-->
+
+        <section id="mass" class="section section-lilac2 hidden" data-section="mass">
+            <h2><i class="fas fa-glass-cheers"></i> Recepción de la Fiesta</h2>
+            <p>Día: Sábado </p>
+            <p>Fecha: 04-10-2025</p>
+            <p>Salón: Club Mac </p>
+            <p>Ubicación: Prolongación de la 5ta avenida, bajando del terminal de pasajero. Frente a la Coca-Cola</p>
+            <a href="https://maps.app.goo.gl/J8jEHnSiHNoThyN69" class="cta-button" target="_blank">Ver en Google Maps</a>
+        </section>
+        
+        <section id="dress-code" class="section section-lilac hidden" data-section="dress-code">
+            <h2><i class="fas fa-user-tie"></i> Código de Vestimenta</h2>
+            <p>Que los caballeros reflejen su porte y las damas brillen con su belleza única.</p>
+            <img src="https://via.placeholder.com/600x400/fff5ee/555555?text=VESTIMENTA+FORMAL" alt="Personas con vestimenta formal">
+        </section>
+
+        <section id="gifts" class="section hidden" data-section="gifts">
+                                    <img src="mariposa2.png" alt="Mariposa pequeña" class="butterfly-small">
+
+            <h2><i class="fas fa-gift"></i> Obsequios</h2>
+            <p>En este sueño hecho realidad, tu presencia es la joya más brillante.</p>
+            <p>Si tu corazón desea añadir un brillo adicional, una lluvia de sobres con cariño podrás dejar.</p>
+        </section>
+
+        <section id="invitation" class="section section-lilac hidden" data-section="invitation">
+            <h2><i class="fas fa-envelope-open-text"></i> Te invito a celebrar conmigo</h2>
+            <p>Con gran alegría, quiero compartir un momento muy especial de mi vida contigo. Te espero para celebrar mis 15 años y crear recuerdos inolvidables.</p>
+            <p>¡No faltes!</p>
+        </section>
+
+        <section id="gallery" class="section hidden" data-section="gallery">
+             <h2><i class="fas fa-camera-retro"></i> Galería de Fotos</h2>
+            <div class="gallery-grid">
+                <img src="img1.jpg" alt="Foto 1">
+                <img src="img3.jpg" alt="Foto 2">
+                <img src="img2.jpg" alt="Foto 3">
+                <img src="img1.jpg" alt="Foto 4">
+            </div>
+        </section>
+
+        <section id="rsvp" class="section section-lilac hidden" data-section="rsvp">
+            <h2><i class="fas fa-clipboard-list"></i> Confirmar Asistencia</h2>
+            <p>Para tener una mejor organización, por favor confirma tu asistencia antes del [Fecha Límite].</p>
+            <a href="https://wa.me/04247390462" class="cta-button" target="_blank">Confirmar por WhatsApp</a>
+        </section>
+
+        <section id="esperanza" class="section2 hidden" data-section="esperanza" >
+            <h2><i class="fas fa-heart"></i> El brillo de esta noche vive en mi corazón...</h2>
+            <p>... pero se iluminará más con tu presencia.</p>
+            <h3>Te esperamos</h3>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hecho con ❤️ para Josymar</p>
+    </footer>
+    
+    <button id="scroll-btn" class="scroll-button"><i class="fas fa-chevron-down"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
